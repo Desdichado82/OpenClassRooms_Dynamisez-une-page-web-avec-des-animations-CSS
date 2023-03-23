@@ -1,0 +1,43 @@
+
+@media only screen and (min-width:600px)and (max-width:900px){
+
+
+
+        .main-content{
+         
+            padding:20px;
+            
+            .resteraunt-groupe{
+            align-items: stretch;
+            gap:1.2rem;
+               
+            }
+            
+            
+            
+            }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        padding:0px;
+    }
+    .main-nav{
+        padding:20px;
+        ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                width:100%;
+            }
+        }
+
+        
+    }
+    .resteraunt-groupe{
+        flex-direction: column;
+    }
+  }

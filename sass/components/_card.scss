@@ -1,0 +1,60 @@
+.main-card{
+padding: 0px 0px 15px;
+background-color:$white;
+box-shadow:$card-shadow;
+border-radius: 20px;
+
+
+
+    img{
+        border-top-left-radius:20px ;
+        border-top-right-radius:20px ;
+        height: 200px;
+    }
+
+    .description{
+        text-overflow: ellipsis;
+        justify-content: space-between;
+        padding:0.5rem;
+
+        h3{
+            font-size: large;
+        }
+    }
+
+
+
+
+    .nouveau-badge{
+        position: relative;
+        float:right;
+        z-index: 4;
+        background-color: $tertiaire;
+        color:$dark-green;
+        border-radius:0.2rem;
+        padding:0.5rem;
+        margin-top: -180px;
+        margin-right: 15px;
+
+       
+    }
+}
+
+.menu-card{
+    
+    img{
+        border-top-left-radius:20px ;
+        border-bottom-left-radius:20px ;
+    }
+    .description{
+        text-overflow: ellipsis;
+    }
+    .menu-check{
+        display:none
+    }
+}
+
+
+
+
+

@@ -1,0 +1,45 @@
+.main-nav{
+    padding:2rem;
+
+    ul{
+       align-items:baseline; 
+       justify-content: space-evenly;
+       gap:1rem;
+    }
+    a{
+        color:$black;
+    }
+
+    li{
+        @include d-flex;
+        align-items: center;
+        background-color: $light-grey;
+        padding:1rem;
+        border-radius:25px;
+        box-shadow: $card-shadow;
+        margin-bottom:1rem;
+    }
+
+    i{
+        color:$primaire;
+        margin-right:1rem;
+        margin-left:1rem;
+        
+    }
+
+    label{
+        position:relative;
+        background-color: $primaire;
+        color:$white;
+        width:25px;
+        height:25px;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        margin-left:-1.5rem;
+        padding:0.2rem;
+        z-index: 4;
+    
+        
+    }
+}

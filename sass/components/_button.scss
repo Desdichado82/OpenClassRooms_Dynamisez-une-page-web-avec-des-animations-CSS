@@ -1,0 +1,39 @@
+.btn{
+    background-image: $btn-gradient;
+    color:$white;
+    border:none;
+    border-radius: 25px;
+    padding:1rem;
+    font-size: $md;
+    box-shadow:$card-shadow;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    padding:1.2rem;
+}
+
+// card like button
+
+.like-button{
+    background: none;
+    border:none;
+   
+    
+.fa-heart{
+    font-size: $lg;
+    margin-right:1rem;
+    background-clip: text;
+  
+
+    &:hover{
+        opacity: 1;
+    transition: 0.3s ease-in-out;
+    background-image:$btn-gradient;
+    background-clip: text;
+    
+  
+    }
+    
+ 
+}
+
+}
