@@ -17,23 +17,67 @@
     background: none;
     border:none;
    
-    
-.fa-heart{
-    font-size: $lg;
-    margin-right:1rem;
-    background-clip: text;
-  
+    .heart-regular{
+        
+        font-size: 1.8rem;
+        font-weight: 200;
+        position: inherit;
+        z-index: 1;
+       
+       
+        &::before{
+           
+            content: '\f004';
+            color:black;
+            font-family: "Font Awesome 6 free"; 
+            font-weight: 200;
+            font: var(--fa-font-regular);
+            
+           
+     
+        }
 
-    &:hover{
-        opacity: 1;
-    transition: 0.3s ease-in-out;
-    background-image:$btn-gradient;
-    background-clip: text;
+    }
+
+
+
+    .heart-solid{
+        font-size: 1.8rem;
+        font-weight: 200;
+        position: absolute;
+        z-index: 2;
+       
+
+        
+       
+    }
+    .heart-solid::before{
     
-  
+        content: '\f004';
+        color:black;
+        font-family: "Font Awesome 6 free"; 
+        font-weight: 200;
+        font: var(--fa-font-regular);
+        
+        
+       
+       
+       
+       
     }
     
- 
-}
+    .heart-solid:hover::before{
+       
+       @include fillHeart;
+       font: var(--fa-font-solid);
+       background: -webkit-linear-gradient($primaire, $secondaire);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+       border:1 px solid;
+       opacity: 1;
+      
+    }
+    
 
 }

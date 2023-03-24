@@ -1,0 +1,17 @@
+.loader{
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index: 1;
+    width:120px;
+    height:120px;
+    margin:-76px 0 0 -76px;
+    border-radius:50%;
+    border-top: $primaire 16px solid ;
+    border-right: $secondaire 16px solid ;
+    border-bottom:   $tertiaire 16px solid ;
+    border-left:$dark-grey 16px solid ;
+    @include loader-animation;
+
+
+}
