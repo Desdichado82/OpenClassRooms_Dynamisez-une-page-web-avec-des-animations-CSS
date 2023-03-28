@@ -7,24 +7,22 @@
          
             padding:20px;
             
-            .resteraunt-groupe{
-            align-items: stretch;
-            gap:1.2rem;
-               
             }
-            
-            
-            
-            }
+
+            .resteraunt-groupe,.menu-groupe{
+                align-items: stretch;
+                gap:1.2rem;
+                   
+                }
 }
 
 @media only screen and (max-width: 600px) {
 
     body{
         padding:0px;
+        width:100%;
     }
     .main-nav{
-        padding:20px;
         ul{
             flex-direction: column;
             justify-content: center;
@@ -37,7 +35,18 @@
 
         
     }
-    .resteraunt-groupe{
+
+    .header-menu{
+        display:none;
+    }
+    .resteraunt-groupe,.menu-groupe{
         flex-direction: column;
     }
   }
+
+  
+
+.main-content {
+
+     padding:5px;
+}

@@ -50,18 +50,30 @@ justify-content:center;
 justify-items: center;
 padding:2rem;
 
-.resteraunt-groupe{
-justify-content: center;
-align-items: center;
-gap:1.2rem;
-   
-}
+
 
 a{
     color:black;
 }
 
 }
+
+.resteraunt-groupe,.menu-groupe{
+    justify-content: center;
+    align-items: stretch;
+    gap:30px;
+    padding:20px;
+
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+       
+    }
 
 .universal-footer{
     padding:0.5rem;

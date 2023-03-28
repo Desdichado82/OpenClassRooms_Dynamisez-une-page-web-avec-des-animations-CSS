@@ -41,17 +41,92 @@ border-radius: 20px;
 }
 
 .menu-card{
-    
-    img{
+    padding:0px;
+    padding-bottom: 0px;
+    background-color:$white;
+    box-shadow:$card-shadow;
+    border-radius: 20px;
+    @include fadeIn;
+    cursor:grab;
+
+ 
+    .img-carte{
         border-top-left-radius:20px ;
-        border-bottom-left-radius:20px ;
+        border-top-right-radius:20px ;
+        height:225px;
     }
+
+    .content{
+        justify-content: space-evenly;
+        flex:1;
+    }
+
     .description{
+        padding:10px;
+        
+    }
+
+    .check-box{
+        width:0%;
+        opacity:0;
+        background-color:$tertiaire;
+        padding:5px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: width 400ms;
+        .fa-circle-check::before{
+            color:$white;
+            font-size: 2rem;
+            
+        }
+    }
+
+    .prix{
+        font-weight: 900;
+        font-size: 1.2rem;
+        justify-content:center;
+        align-items: end;
+        flex:1;
+        padding:5px;
+    }
+
+    .description, .description p{
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
+         
     }
-    .menu-check{
-        display:none
+
+    &:hover{
+
+        .description, .description p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+             
+        }
+
+        .check-box{
+            width:30%;
+            opacity:1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+            
+            .fa-circle-check{
+                color:$white;
+                font-size: 2rem;
+                transform: rotate(360deg);
+                transition: 0.4s ease-in-out;
+                
+            }
+        }
+
+        
     }
+ 
 }
 
 

@@ -1,15 +1,58 @@
 .menu-header{
-    justify-content:space-around;
+    justify-content:start;
     align-items: center;
-    padding:2rem;
+    padding:20px;
+
+    .header-title{
+        margin:auto
+    }
+
+    .fa-arrow-left{
+        color:black;
+        font-size: 2rem;
+    }
+}
+
+.header-menu{
+    padding:0px;
+}
+
+.menu-img{
+    height:350px;
+}
+
+
+
+.menu-main{
+    padding:20px;
+    position: relative;
+    border-top-left-radius: 80px;
+    border-top-right-radius:80px;
+    margin-top:-125px;
+
+
+  
+}
+
+.menu-title{
+    border-bottom:8px solid $tertiaire;
+    width:50px;
+    font-weight:300;
 }
 
 
 .form-header{
     justify-content: space-between;
-    align-items: center;
-    padding:2rem;
+    align-items: baseline;
+    padding: 2rem;
 }
+
+.submit-button{
+justify-content: center;
+align-items: center;
+}
+
+
 
 
 
