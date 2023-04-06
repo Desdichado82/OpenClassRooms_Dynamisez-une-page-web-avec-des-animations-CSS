@@ -1,120 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/style.css">
-    <title>Oh My food</title>
+    <!--external stylesheet-->
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <title>ohmyfood</title>
 </head>
-<body>
-    <!--loader-->
-    <div class="loader"></div>
-   <!--Header-->
-       <header class="main-header d-flex-column">
-        <a href=""><h1 class="text-center">ohmyfood</h1></a>
-        <section class="hero d-flex d-flex-column bg-light-grey">
-            <div class="d-flex bg-somber-grey location"><span class=""><i class="fa-solid fa-location-dot"></i><strong>Paris, Belleville</strong></span></div>
-            <div class="intro">
-                <h2 class="text-center">Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurant d'exception, sélectionnés par nos soins</p>
-                <button class="btn">Explorer nos restaurants</button>
-            </div>
-        </section>
-       </header>
-    <!--navigation-->
-       <nav class="main-nav">
-        <h2>Fonctionnement</h2>
-            <ul class="d-flex">
-                <li class="fonctionnement"><label for="">1</label><i class="fa-solid fa-mobile-screen"></i><a href="">Choisissez un resteraunt</a></li>
-                <li class="fonctionnement"><label for="">2</label><i class="fa-solid fa-bars"></i><a href="">Composez votre menu</a></li>
-                <li class="fonctionnement"><label for="">3</label><i class="fa-solid fa-store"></i><a href="">Dégustez au restaurant</a></li>
-            </ul>
-       </nav>
-       <main class="main-content d-flex d-flex-column bg-light-grey">
-        <h2>Restaurant</h2>
-        <div class=" resteraunt-groupe d-flex">
-            <article class="main-card  d-flex d-flex-column">
-                <a href="./dist/menus/la_palette_de_gout.html">
-                <header class="article-header">
-                    <img src="./dist/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                    <label class="nouveau-badge">Nouveau</label>
-                </header>
-                <div class="d-flex description">
-                    <div>
-                        <h3>La palette de goût</h3>
-                        <p>Ménilmontant</p>
-                    </div>
-                </a>
-                    <button class="like-button">
-                        <i class="heart-solid"></i>
-                        <i class="heart-regular"></i>
-                    </button>
-                </div>
-            </article>
-            <article class="main-card d-flex d-flex-column">
-                <a href="./dist/menus/La_note_enchantée.html">
-                <header>
-                    <img src="./dist/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                    <label class="nouveau-badge">Nouveau</label>
-                </header>
-                <div class="d-flex description">
-                    <div>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                    </div>
-                </a>
-                      <button class="like-button">
-                        <i class="heart-solid"></i>
-                        <i class="heart-regular"></i>
-                      </button>
-                </div>
-            </article>
-            <article class="main-card d-flex d-flex-column">
-                <a href="">
-                <header>
-                    <img src="./dist/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                </header>
-                <div class="d-flex description">
-                    <div>
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                </a>
-                    <button class="like-button">
-                        <i class="heart-solid"></i>
-                        <i class="heart-regular"></i>
-                    </button>
-                </div>
-            </article>
-            <article class="main-card d-flex d-flex-column">
-                <a href="">
-                <header>
-                    <img src="./dist/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-                    <label class="nouveau-badge">Nouveau</label>
-                </header>
-                <div class="d-flex description">
-                    <div>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                </a>
-                    <button class="like-button">
-                        <i class="heart-solid"></i>
-                        <i class="heart-regular"></i>
-                    </button>
-                </div>
-            </article>
+<body id="body-index" class="omf-body">
+    <!--loader-index-->
+    <div id="index-loader" class="omf-loader"></div>
+     <!--header-index-->
+    <header id="header-index" class="omf-header-index omf-flex-column">
+        <div id="logo" class="omf-logo omf-flex-row white-bg"><h1 class="omf-h1">ohmyfood</h1></div>
+        <div id="location" class="omf-index-location omf-flex-row somber-grey-bg">
+           
+            <span class="omf-index-address"> <i class="fa-solid fa-location-dot omf-icon"></i><strong>Paris, Belleville</strong></span>
         </div>
-       </main>
-       <footer class="universal-footer bg-dark-grey text-white">
-        <h3>ohmyfood</h3>
-        <ul class=" d-flex d-flex-column">
-            <li><i class="fa-solid fa-utensils"></i><a href="">Proposer un resteraunt</a></li>
-            <li><i class="fa-solid fa-handshake"></i><a href="">Devenir partenaire</a></li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">Contact</a></li>
+        <div id="introduction" class="omf-introduction-index omf-flex-column  pd-lrg white-bg">
+            <h2 class="omf-h2 text-center">Réservez le menu qui vous convient</h2>
+            <p class="omf-p text-center">Découvrez des restaurant d'exception, sélectionnés par nos soins</p>
+            <button class="omf-btn mrg-xl">Explorer nos restaurants</button>
+        </div>
+    </header>
+     <!--main-index-->
+    <main id="main-index"  class="omf-main-index omf-flex-column">
+        <section id="fonctionment" class="omf-fonctionment pd-lrg white-bg">
+            <h3 class="omf-h3">Fonctionnement</h3>
+            <ul class="omf-ul">
+                <li class="omf-li somber-grey-bg"><span class="omf-badge">1</span><i class="omf-icon fa-solid fa-mobile-screen"></i>Choisissez un resteraunt</li>
+                <li class="omf-li somber-grey-bg"><span class="omf-badge">2</span><i class="omf-icon fa-solid fa-bars"></i>Composez votre menu</li>
+                <li class="omf-li somber-grey-bg"><span class="omf-badge">3</span><i class="omf-icon fa-solid fa-store"></i>Dégustez au restaurant</li>
+            </ul>
+        </section>
+        <!--restaurant-section-->
+        <section id="restaurant" class="omf-restaurant light-grey-bg omf-flex-column">
+            <h3 class="omf-h3 pd-lrg">Restaurants</h3>
+            <!--group container-->
+            <div id="resteraunt-groupe-A" class="omf-container">
+                <!--card-container-->
+                <article class="omf-card-container">
+                    <header class="omf-card-header">
+                        <a class="omf-a" href="/menus/La_palette_de_goût.html">
+                            <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="omf-card-img">
+                            <span class="omf-nouveau-badge">Nouveau</span>
+                        </a>
+                    </header>
+                    <div class="omf-card-content pd-m omf-flex-row">
+                        <div class="omf-info">
+                            <h4 class="omf-h4">La palette de goût</h4>
+                            <p class="omf-p">Ménilmontant</p>
+                        </div>
+                        <div class="omf-like omf-flex">
+                            <button class="omf-like-btn"> 
+                                <i class="omf-icon heart-solid"></i>
+                                <i class="omf-icon heart-regular"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                 <!--card-container-->
+                 
+                 <!--card-container-->
+                <article class="omf-card-container">
+                    <header class="omf-card-header">
+                        <a class="omf-a" href="#">
+                            <img src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" class="omf-card-img">
+                            <span class="omf-nouveau-badge">Nouveau</span>
+                        </a>
+                    </header>
+                    <div class="omf-card-content pd-m omf-flex-row">
+                        <div class="omf-info">
+                            <h4 class="omf-h4">La note enchantée</h4>
+                            <p class="omf-p">Charonne</p>
+                        </div>
+                        <div class="omf-like omf-flex">
+                            <button class="omf-like-btn"> 
+                                <i class="omf-icon heart-solid"></i>
+                                <i class="omf-icon heart-regular"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div id="resteraunt-groupe-B" class="omf-container">
+                 <!--card-container-->
+                <article class="omf-card-container">
+                    <header class="omf-card-header">
+                        <a class="omf-a" href="#">
+                            <img src="/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="omf-card-img">
+                        </a>
+                    </header>
+                    <div class="omf-card-content pd-m omf-flex-row">
+                        <div class="omf-info">
+                            <h4 class="omf-h4">À la française</h4>
+                            <p class="omf-p">Cité Rouge</p>
+                        </div>
+                        <div class="omf-like omf-flex">
+                            <button class="omf-like-btn"> 
+                                <i class="omf-icon heart-solid"></i>
+                                <i class="omf-icon heart-regular"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                 <!--card-container-->
+                <article class="omf-card-container">
+                    <header class="omf-card-header">
+                        <a class="omf-a" href="#">
+                            <img src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" class="omf-card-img">
+                        </a>
+                    </header>
+                    <div class="omf-card-content pd-m omf-flex-row">
+                        <div class="omf-info">
+                            <h4 class="omf-h4">Le délice des sens</h4>
+                            <p class="omf-p">Folie-Méricourt</p>
+                        </div>
+                        <div class="omf-like omf-flex ">
+                            <button class="omf-like-btn"> 
+                                <i class="omf-icon heart-solid"></i>
+                                <i class="omf-icon heart-regular"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+    </main>
+     <!--global-footer-->
+    <footer id="footer-index"  class="omf-footer dark-grey-bg text-white pd-lrg ">
+        <h3 class="omf-h3 text-white">ohmyfood</h3>
+        <ul class="omf-footer-ul text-white">
+            <li class="omf-li"><i class=" omf-icon fa-solid fa-utensils"></i><a  class="omf-a" href="">Proposer un resteraunt</a></li>
+            <li class="omf-li"><i class=" omf-icon fa-solid fa-handshake"></i><a  class="omf-a" href="">Devenir partenaire</a></li>
+            <li class="omf-li"><a class="omf-a" href="#">Mentions légales</a></li>
+            <li class="omf-li"><a class="omf-a" href="#">Contact</a></li>
         </ul>
-       </footer>
+    </footer>
+     <!--Author David James Mclean 2023 openclassrooms project :trois Dynamisez-une-page-web-avec-des-animations-CSS-->
 </body>
+
 </html>

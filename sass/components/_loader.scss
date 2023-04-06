@@ -1,4 +1,8 @@
-.loader{
+
+/*global loader*/
+//global loader
+
+.omf-loader{
     position: absolute;
     left:50%;
     top:50%;
@@ -10,7 +14,7 @@
     border-top: $primaire 16px solid ;
     border-right: $secondaire 16px solid ;
     border-bottom:   $tertiaire 16px solid ;
-    border-left:$dark-grey 16px solid ;
+    border-left: #353535ff 16px solid ;
     @include loader-animation;
 
 

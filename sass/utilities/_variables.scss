@@ -1,49 +1,62 @@
 // chart graphics colors 
-    $primaire:#9356DC;
-    $secondaire:#FF79DA;
-    $tertiaire:#99E2D0;
-    $dark-green:#008033ff;
-// 
+$primaire:#9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
+$dark-green:#008033ff;
 
-$color-chart:(
-    primaire:#9356DC,
-    secondaire:#FF79DA,
-    tertiaire:#99E2D0
+
+
+$bg-colors:(
+    // backgrounds 
+dark-grey-bg:#353535ff,
+light-grey-bg:#f7f7f7ff,
+somber-grey-bg:#eaeaeaff,
+white-bg:#ffff,
+mint-bg:$tertiaire
 );
-
-
-// backgrounds 
-$dark-grey:#353535ff;
-$light-grey:#f7f7f7ff;
-$somber-grey:#eaeaeaff;
-$white:#ffff;
-$black:black;
-   
-
-@each $name ,$color in $color-chart{
-.#{$name}{
-    color:$color;
-}
-}
-
 
 // gradient
 
-$btn-gradient:linear-gradient(to bottom right,#FF79DA,#9356DC);
+$gradient:linear-gradient(to bottom right,$secondaire,$primaire);
+$gradient-alt:linear-gradient(to bottom right,$primaire,$secondaire);
 
 // shadows
-$card-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+$shadows: 0px 3px 10px rgba(0, 0, 0, 0.4);
+$shadow-top: 0px -8px 6px -6px #888;
+
+
+$margins:(
+    mrg-xs:5px,
+    mrg-s:10px,
+    mrg-m:15px,
+    mrg-lrg:20px,
+    mrg-xl:25px,
+    mrg-auto:auto
+);
+
+
+$paddings:(
+    pd-xs:5px,
+    pd-s:10px,
+    pd-m:15px,
+    pd-lrg:20px,
+    pd-xl:25px,
+);
+
+//size
 
 //size 
-
-$sm:0.5rem;
-$md:1rem;
+$xs:0.8rem;
+$sm:1rem;
+$md:1.2rem;
 $lg:1.5rem;
 $xl:2rem;
 $xxl:2.5rem;
 
-
 //fonts
+/*Font-families*/
+
 
 $roboto:'Roboto', sans-serif;
 $shrikhand:'Shrikhand', cursive;
+   

@@ -1,0 +1,148 @@
+
+/*global-cards*/
+//global-cards
+.omf-card-container{
+    min-height:2rem;
+    width:100%;
+    max-width: min(100%,50rem);
+    align-self: stretch;
+    overflow:auto;
+    text-overflow: ellipsis;
+    font-size:$sm;
+    box-shadow: $shadows;
+    background-color: white;
+    border-radius:20px;
+
+    .omf-card-header{
+
+        .omf-a{
+
+            .omf-card-img{
+                
+                height:224px;
+                object-fit: cover;
+            }
+
+            .omf-nouveau-badge{
+                background-color:$tertiaire;
+                color:$dark-green;
+                border-radius:0.2rem;
+                padding:10px;
+                margin-top: -190px;
+                margin-right: 15px;
+                position: relative;
+                float:right;
+                z-index: 4;
+            }
+
+        }
+  
+    }
+
+    .omf-card-content{
+        justify-content:space-around;
+
+            .omf-info{
+                overflow: hidden;
+                .omf-h4{
+                    text-overflow: ellipsis;
+                    font-size: $md;
+                }
+        
+                .omf-p{
+                    text-overflow: ellipsis;
+                    font-weight: 200;
+                    font-size: $md;
+                }
+
+            }
+
+            .omf-like{
+                justify-content: flex-end;
+                margin-right: 16px;
+                align-items: baseline;
+                flex:1;
+            }
+
+       
+    }
+
+    .omf-container{
+        text-overflow: ellipsis;
+    }
+
+
+    .omf-icons{
+        font-size: $xs;
+
+    }
+
+}
+
+/*index-cards*/
+//index-cards
+
+
+/*menu-cards*/
+//menu-cards
+
+.menu-card{
+    padding: 0px;
+    padding-bottom: 0px;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    @include fadeIn;
+
+    .omf-menu-description{
+        padding:12px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; 
+
+        .omf-h4,.omf-p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+        }
+    }
+
+    .omf-prix{
+        justify-content: end;
+    }
+
+    .omf-checkbox{
+        width:0px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: $tertiaire;
+        justify-content: center;
+        transition: width 400ms ease-in-out;
+
+        .fa-circle-check{  
+        opacity:0;
+        text-align: center;
+        font-size: 2rem;
+        color:white;
+        }
+
+    }
+
+    &:hover{
+        .omf-checkbox{
+           width:100px;
+           transition: width 400ms ease-in-out;
+           
+            .fa-circle-check{
+                opacity:1;
+                transform: rotate(360deg);
+                transition: 0.4s ease-in-out;
+            }
+        }
+    }
+}
+
+.menu-card:nth-child(1) {animation-delay: 3s; }
+.menu-card:nth-child(2) {animation-delay: 3.5s; }
+.menu-card:nth-child(3) {animation-delay: 4s; }
+.menu-card:nth-child(4) {animation-delay: 4.5s; }

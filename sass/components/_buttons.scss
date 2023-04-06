@@ -1,11 +1,15 @@
-.btn{
-    background-image: $btn-gradient;
-    color:$white;
+
+/*global buttons*/
+//global buttons
+
+.omf-btn{
+    background-image: $gradient;
+    color:white;
     border:none;
     border-radius: 25px;
     padding:1rem;
     font-size: $md;
-    box-shadow:$card-shadow;
+    box-shadow:$shadows;
     margin-top:2rem;
     margin-bottom: 2rem;
     padding:1.2rem; 
@@ -15,19 +19,21 @@
   &:hover{
     transform:scale(1.1);
     box-shadow: 20px 20px 50px grey;
+    transition:400ms ease-in;
+    background-image: $gradient-alt;
   }
 }
 
-// card like button
+/*like buttons*/
+//like buttons
 
-.like-button{
-    background: none;
-    border:none;
+.omf-like-btn{
    
+    
    
     .heart-regular{
         
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 200;
         position: inherit;
         z-index: 1;
@@ -36,9 +42,9 @@
         &::before{
            
             content: '\f004';
-            color:black;
+            color:#101010;
             font-family: "Font Awesome 6 free"; 
-            font-weight: 200;
+            font-weight: 100;
             font: var(--fa-font-regular);
             
            
@@ -50,10 +56,11 @@
 
 
     .heart-solid{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 200;
         position: absolute;
         z-index: 2;
+        opacity: 0;
        
 
         
@@ -82,10 +89,16 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-       border:1 px solid;
        opacity: 1;
       
+    }
+
+    .heart-solid:hover{
+        opacity:1;
     }
     
 
 }
+
+
+
