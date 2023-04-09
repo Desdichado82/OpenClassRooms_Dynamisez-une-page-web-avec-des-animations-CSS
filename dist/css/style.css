@@ -242,7 +242,7 @@ button {
 .omf-main-index .omf-fonctionment .omf-ul .omf-li {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 25px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   margin-bottom: 25px;
@@ -357,7 +357,7 @@ button {
 
 /*global reponsive*/
 /*index reponsive*/
-@media all and (min-width: 830px) {
+@media all and (min-width: 769px) {
   .omf-ul {
     display: flex;
   }
