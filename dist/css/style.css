@@ -192,6 +192,16 @@ button {
   color: black;
   margin-right: 5px;
 }
+.omf-header-index .omf-index-location .omf-local {
+  appearance: none;
+  width: 125px;
+  font-weight: 600;
+  color: black;
+  border: none;
+  background-color: #eaeaea;
+  font-size: 1rem;
+  text-align: center;
+}
 .omf-header-index .omf-introduction-index {
   justify-content: center;
   align-items: center;
@@ -278,7 +288,7 @@ button {
   text-align: center;
   margin-left: -1.5rem;
   padding: 0.2rem;
-  z-index: 4;
+  z-index: inherit;
 }
 .omf-main-index .omf-restaurant .omf-h3 {
   font-size: 1.5rem;
@@ -294,7 +304,7 @@ button {
   padding: 20px;
 }
 .omf-main-menu .menu-title {
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
 }
@@ -316,9 +326,6 @@ button {
   padding: 20px;
   justify-content: center;
   gap: 20px;
-}
-.omf-main-menu .omf-order-form .omf-menu-group:nth-child(2) {
-  animation-delay: 6s;
 }
 .omf-main-menu .omf-order-form .btn-container {
   justify-content: center;
@@ -402,19 +409,45 @@ button {
 /*menu responsive*/
 /*components*/
 /*global loader*/
+.omf-loader-bg {
+  width: 100%;
+  max-width: 1220px;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 3s;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation: loader-transistion 15s ease-in-out forwards;
+}
+@keyframes loader-transistion {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transition: 0.4s;
+    z-index: -9999;
+  }
+}
+
 .omf-loader {
   position: absolute;
-  left: 50%;
-  top: 50%;
   z-index: 1;
   width: 150px;
   height: 150px;
-  margin: -75px 0 0 -75px;
+  margin: auto;
   border-radius: 50%;
   border-top: #9356DC 16px solid;
   border-right: #FF79DA 16px solid;
   border-bottom: #99E2D0 16px solid;
   border-left: #353535 16px solid;
+  animation-delay: 3s;
   animation: loader-animation 3s ease-in-out forwards;
 }
 @keyframes loader-animation {
@@ -639,17 +672,17 @@ button {
 }
 
 .menu-card:nth-child(1) {
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 .menu-card:nth-child(2) {
-  animation-delay: 3.5s;
+  animation-delay: 1.5s;
 }
 
 .menu-card:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 
 .menu-card:nth-child(4) {
-  animation-delay: 4.5s;
+  animation-delay: 2.5s;
 }/*# sourceMappingURL=style.css.map */

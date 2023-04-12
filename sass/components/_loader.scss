@@ -2,20 +2,40 @@
 /*global loader*/
 //global loader
 
+.omf-loader-bg{
+ width:100%;
+ max-width: 1220px;
+ height:100%;
+ margin:auto;
+ background-color: white;
+ position: fixed;
+ z-index: 1000;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ animation-delay: 3s;
+ animation-duration: 500ms;
+ animation-fill-mode: both;
+ @include loader-transistion;
+
+
+}
+
 .omf-loader{
     position: absolute;
-    left:50%;
-    top:50%;
+    
     z-index: 1;
     width: 150px;
     height:150px;
-    margin:-75px 0 0 -75px;
+    margin:auto;
     border-radius:50%;
     border-top: $primaire 16px solid ;
     border-right: $secondaire 16px solid ;
     border-bottom:   $tertiaire 16px solid ;
     border-left: #353535ff 16px solid ;
+    animation-delay: 3s;
     @include loader-animation;
 
 
 }
+

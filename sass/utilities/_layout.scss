@@ -39,6 +39,17 @@
             color:black;
             margin-right: 5px;
         }
+
+        .omf-local{
+            appearance: none;
+            width: 125px;
+            font-weight: 600;
+            color: black;
+            border:none;
+            background-color:#eaeaeaff;
+            font-size: $sm;
+            text-align: center;
+        }
     }
 
     .omf-introduction-index{
@@ -144,7 +155,7 @@
             text-align: center;
             margin-left:-1.5rem;
             padding:0.2rem;
-            z-index: 4;
+            z-index:inherit;
         
             
         }
@@ -175,7 +186,7 @@
     padding: 20px;
 
     .menu-title{
-        justify-content:space-evenly;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 25px;
 
@@ -204,9 +215,6 @@
             justify-content:center;
             gap: 20px;
 
-            &:nth-child(2){
-                animation-delay: 6s;
-            }
 
         }
 

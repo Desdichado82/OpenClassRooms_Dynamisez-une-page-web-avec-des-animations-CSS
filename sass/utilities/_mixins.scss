@@ -21,6 +21,23 @@
 
 /*Loader animation*/
 
+@mixin loader-transistion{
+        animation: loader-transistion 15s ease-in-out forwards;
+@keyframes loader-transistion{
+    0%{
+        opacity:1;
+       
+    }
+
+    100%{
+        opacity:0;
+        transition: 0.4s;
+        z-index: -9999;
+    }
+}
+       
+}
+
 @mixin loader-animation{
     animation:loader-animation 3s ease-in-out forwards;
    
